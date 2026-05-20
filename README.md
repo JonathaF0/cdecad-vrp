@@ -32,8 +32,6 @@ A FiveM resource that syncs vRP character and vehicle data to your CDECAD system
 ## Configuration
 
 Edit `shared/config.lua`:
-
-lua
 ###
 API Settings
 
