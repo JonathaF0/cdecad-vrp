@@ -33,10 +33,17 @@ A FiveM resource that syncs vRP character and vehicle data to your CDECAD system
 
 Edit `shared/config.lua`:
 
-```lua
-Config.API_URL      = 'https://your-cdecad-instance.com/api'
-Config.API_KEY      = 'your-fivem-api-key'
-Config.COMMUNITY_ID = 'your-discord-guild-id'
+lua
+###
+API Settings
+
+For security reasons, CDE CAD credentials are now stored in server.cfg as convars rather than in resource files. Add the following block to your server.cfg:
+```
+##CDECAD
+set CDE_CAD_API_URL "https://your-cdecad-instance.com/api"
+set CDE_CAD_API_KEY "your-fivem-api-key"
+set CDE_CAD_COMMUNITY_ID "your-discord-guild-id"
+set CDE_CAD_SERVER_NAME "Your Server Name"
 ```
 
 ### vRP-specific settings
